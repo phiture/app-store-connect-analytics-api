@@ -25,7 +25,11 @@ const Home: React.FC = () => {
             setResponse(resp.data);
         } catch (error) {
             console.error("Error making the request:", error);
-            setResponse(error.message);
+            if (error instanceof Error) {
+                setResponse(error.message);
+            } else {
+                setResponse("An unknown error occurred");
+            }
         }
     };
 
