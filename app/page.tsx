@@ -60,11 +60,7 @@ const Home: React.FC = () => {
   "data": {
     "type": "analyticsReportRequests",
     "attributes": {
-      "appStoreVersion": {
-        "data": {
-          "accessType": "${accessType}"
-        }
-      }
+      "accessType": "${accessType}"
     },
     "relationships": {
       "app": {

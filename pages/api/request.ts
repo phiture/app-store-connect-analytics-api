@@ -14,11 +14,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
                     data: {
                         type: "analyticsReportRequests",
                         attributes: {
-                            appStoreVersion: {
-                                data: {
-                                    accessType: accessType
-                                }
-                            }
+                            accessType: accessType
                         },
                         relationships: {
                             app: {
